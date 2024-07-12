@@ -8,10 +8,8 @@
 }
 .section-title {
   height: 200px;
-  background-color: var(--bs-gray-300);
 }
 .section-title h1 {
-  height: 200px;
   display: flex;
   justify-content: center;
 }
@@ -35,14 +33,27 @@
   justify-content: center;
   align-items: center;
 }
+
+.modal-open {
+  display: flex;
+}
+.section-title_none {
+  display: none;
+}
+.section-middle_first {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
 @media screen and (max-width: 576px) {
   .main div {
     height: 100px;
   }
+  .section-title {
+    height: 100px;
+  }
   .section-middle {
     height: 340px;
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
   .section-end {
     height: 340px;
