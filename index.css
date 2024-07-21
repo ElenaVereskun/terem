@@ -34,9 +34,14 @@
 }
 .bottom {
   height: 200px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
   gap: 20px;
+}
+.btn-warning-wrapper{
+  flex: 1;
+}
+.btn-success-wrapper{
+  flex: 2;
 }
 .bottom div {
   display: flex;
@@ -66,8 +71,9 @@
     height: 100px;
   }
   .bottom {
-    height: 340px;
-    display: flex;
     flex-direction: column;
+  }
+  .btn-success-wrapper{
+    flex: 1;
   }
 }
