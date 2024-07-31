@@ -7,13 +7,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const buttonToggleTitle = document.querySelector(".btn-warning");
   buttonToggleTitle.addEventListener("click", function () {
-    const title = document.querySelector(".block__title");
-    title.classList.toggle("block__title_none");
+    const title = document.querySelector(".block_type_title");
+    title.classList.toggle("block_type_none");
   });
 
   const buttonToggleMidleBlock = document.querySelector(".btn-success");
   buttonToggleMidleBlock.addEventListener("click", function () {
-    const middleBlock = document.querySelector(".border-dotted");
-    middleBlock.classList.toggle("block__middle_first");
+    const middleBlock = document.querySelector(".block__dotted");
+    middleBlock.classList.toggle("block_type_toggle");
   });
 });
